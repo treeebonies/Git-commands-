@@ -1,0 +1,275 @@
+
+Roop@Surface MINGW64 ~/Desktop
+$ ls
+'C80-proj-template-mainUse this guest list'/
+ DictionaryApp-Offiline-Version-Template-main/
+ JAVASCRIPT/
+'Just (Simar) - Chrome.lnk'*
+'Project 63'/
+ Thumbs.db
+'Treee - Chrome.lnk'*
+'VirtualDJ 2020 (32 bits).lnk'*
+ WHITEHATJR/
+ Zoom.lnk*
+ desktop.ini
+ icons8-menu-24.png
+ snow-photography-tips-a-beginners-guide.jpg
+'winter pic.jpg'
+
+Roop@Surface MINGW64 ~/Desktop
+$ cd WHITEHATJR
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR
+$ mkdir git
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR
+$ cd git
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git
+$ git init
+Initialized empty Git repository in C:/Users/Roop/Desktop/WHITEHATJR/git/.git/
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        character.js
+        story.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git add character.js story.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   character.js
+        new file:   story.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   character.js
+
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git add character.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git committ -m "added characters"
+git: 'committ' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   character.js
+        new file:   story.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   story.js
+
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git add story.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git commit -m "added story"
+[master (root-commit) 6531f12] added story
+ 2 files changed, 6 insertions(+)
+ create mode 100644 character.js
+ create mode 100644 story.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git diff --staged
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git diff
+diff --git a/story.js b/story.js
+index 86ba430..7fee900 100644
+--- a/story.js
++++ b/story.js
+@@ -1,3 +1,4 @@
+-timmy, dan and john are besties
+-they went to the park one day
++timmy, dan and john are besties.
++they went to the park one day.
+ timmy ate cotton candy and john played with a nearby dog.
++danny ate too much ice cream and got brain freeze so he had to go home.
+\ No newline at end of file
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git commit -m "modified story"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   story.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git log
+commit 6531f122b9f698a1a1c619283da5d4ca0dd54926 (HEAD -> master)
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:15:07 2022 -0500
+
+    added story
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git add story.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git commit -m "modified story"
+[master 280d6d7] modified story
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git log
+commit 280d6d7ba34e15c2a36cfdcf9166aa748cc94565 (HEAD -> master)
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:19:37 2022 -0500
+
+    modified story
+
+commit 6531f122b9f698a1a1c619283da5d4ca0dd54926
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:15:07 2022 -0500
+
+    added story
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git branch Simar
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git branch timmy
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git checkout Simar
+Switched to branch 'Simar'
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (Simar)
+$ git checkout timmy
+Switched to branch 'timmy'
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git add story.js
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git commit -m "timmy added"
+[timmy e050f6d] timmy added
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git log
+commit e050f6da2d8846842729521f1c871f4db9d5b5fd (HEAD -> timmy)
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:24:09 2022 -0500
+
+    timmy added
+
+commit 280d6d7ba34e15c2a36cfdcf9166aa748cc94565 (master, Simar)
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:19:37 2022 -0500
+
+    modified story
+
+commit 6531f122b9f698a1a1c619283da5d4ca0dd54926
+Author: treeebonies <treeebonies@gmail.com>
+Date:   Sun Jan 9 20:15:07 2022 -0500
+
+    added story
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ checkout master
+bash: checkout: command not found
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git checkout master
+Switched to branch 'master'
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git diff master timmy
+diff --git a/story.js b/story.js
+index 7fee900..58e70bd 100644
+--- a/story.js
++++ b/story.js
+@@ -1,4 +1,5 @@
+ timmy, dan and john are besties.
+ they went to the park one day.
+ timmy ate cotton candy and john played with a nearby dog.
+-danny ate too much ice cream and got brain freeze so he had to go home.
+\ No newline at end of file
++danny ate too much ice cream and got brain freeze so he had to go home.
++John was chased down by the dog.
+\ No newline at end of file
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git merge
+fatal: No remote for the current branch.
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (master)
+$ git checkout timmy
+Switched to branch 'timmy'
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git remote add text https://github.com/treeebonies/Git-commands-.git
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git push -u https://github.com/treeebonies/Git-commands-.git
+fatal: protocol 'https' is not supported
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git push -u text https://github.com/treeebonies/Git-commands-.git
+fatal: invalid refspec 'https://github.com/treeebonies/Git-commands-.git'
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git remote add origin https://github.com/treeebonies/Git-commands-.git
+git push -u origin main
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (timmy)
+$ git branch -M main
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (main)
+$ git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 918 bytes | 459.00 KiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/treeebonies/Git-commands-.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Roop@Surface MINGW64 ~/Desktop/WHITEHATJR/git (main)
